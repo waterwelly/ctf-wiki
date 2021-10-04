@@ -51,10 +51,10 @@ document.writeln("</script>");
 document.writeln("<script src=\'http://translate.google.cn/translate_a/element.js?cb=googleTranslateElementInit\'></script>`,");
 document.writeln("");
 
-if ( window.location.host == 'waterwelly.github.io'){
-  self.location='https://ctf.waterwelly.com/'
-}
-
+var _host = 'ctf.waterwelly.com';
+if ( window.location.host != _host){
+  self.location='https://' + _host
+};
 
 
 
