@@ -31,6 +31,25 @@ document.writeln("<script charset=\'UTF-8\' id=\'LA_COLLECT\' src=\'//sdk.51.la/
 document.writeln("<script>LA.init({id: \'JSNrRPHfPgJLCTal\',ck: \'JSNrRPHfPgJLCTal\'})</script>");
 document.writeln("");
 document.writeln("");
+document.writeln("<div id=\'google_translate_element\' style=\'position:absolute;bottom:10px;right:10px;z-index:2000;opacity:0.7\'></div>");
+document.writeln("<script>");
+document.writeln("    function googleTranslateElementInit() {");
+document.writeln("        new google.translate.TranslateElement(");
+document.writeln("            {");
+document.writeln("                // pageLanguage: \'zh-CN\',");
+document.writeln("                // 需要翻译的语言，比如你只需要翻译成越南和英语，这里就只写en,vi");
+document.writeln("                includedLanguages: \'en,zh-CN,hr,cs,da,nl,fr,de,el,iw,hu,ga,it,ja,ko,pt,ro,ru,sr,es,th,vi\',");
+document.writeln("                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,");
+document.writeln("                // 自动显示翻译横幅，就是翻译后顶部出现的那个");
+document.writeln("                autoDisplay: true,");
+document.writeln("                // 还有些其他参数，由于原插件不再维护，找不到详细api了，将就了，实在不行直接上dom操作");
+document.writeln("            },");
+document.writeln("            \'google_translate_element\' // 触发元素的id");
+document.writeln("        );");
+document.writeln("    }");
+document.writeln("</script>");
+document.writeln("<script src=\'http://translate.google.cn/translate_a/element.js?cb=googleTranslateElementInit\'></script>`,");
+document.writeln("");
 
 if ( window.location.host == 'waterwelly.github.io'){
   self.location='https://ctf.waterwelly.com/'
