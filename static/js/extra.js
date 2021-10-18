@@ -51,7 +51,7 @@ document.writeln("</script>");
 document.writeln("<script src=\'http://translate.google.cn/translate_a/element.js?cb=googleTranslateElementInit\'></script>`,");
 document.writeln("");
 
-var _host = 'ctf.waterwelly.com';
+var _host = 'ctf.icoc.work';
 if ( window.location.host != _host){
   self.location='https://' + _host
 };
